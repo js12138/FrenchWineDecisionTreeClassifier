@@ -43,7 +43,7 @@ for column_index, column in enumerate(df.columns):
 plt.show()
 
 # 首先对数据进行切分，即划分出训练集和测试集
-from sklearn.cross_validation import train_test_split #调入sklearn库中交叉检验，划分训练集和测试集
+from sklearn.model_selection import train_test_split #调入sklearn库中交叉检验，划分训练集和测试集
 all_inputs = df[['alcohol', 'malic_acid',
                              'ash', 'alcalinity ash']].values
 all_species = df['magnesium'].values
